@@ -211,7 +211,7 @@ def run_single_account(total, idx, user_mi, passwd_mi):
 
 def execute():
     user_list = users.split('#')
-    passwd_list = passwords.split('#')
+    passwd_list = passwords.split('|')
     exec_results = []
     if len(user_list) == len(passwd_list):
         idx, total = 0, len(user_list)
